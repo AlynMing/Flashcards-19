@@ -48,7 +48,7 @@ class CreationViewController: UIViewController {
         
         else {
             flashcardsController.updateFlashcard (question: questionText!, answer: answerText!, extraAnswer1: extraAnswer1Text!, extraAnswer2: extraAnswer2Text!)
-        }
         dismiss(animated: true)
+        }
     }
 }
