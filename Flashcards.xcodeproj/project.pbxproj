@@ -15,6 +15,7 @@
 		2F5B1FD623F877DE00736827 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F5B1FD423F877DE00736827 /* LaunchScreen.storyboard */; };
 		2F5B1FE123F877DF00736827 /* FlashcardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5B1FE023F877DF00736827 /* FlashcardsTests.swift */; };
 		2F5B1FEC23F877DF00736827 /* FlashcardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5B1FEB23F877DF00736827 /* FlashcardsUITests.swift */; };
+		2F5B1FFA240AEC1C00736827 /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5B1FF9240AEC1C00736827 /* CreationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2F5B1FE723F877DF00736827 /* FlashcardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashcardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F5B1FEB23F877DF00736827 /* FlashcardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsUITests.swift; sourceTree = "<group>"; };
 		2F5B1FED23F877DF00736827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F5B1FF9240AEC1C00736827 /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				2F5B1FCB23F877D300736827 /* SceneDelegate.swift */,
 				2F5B1FCD23F877D300736827 /* ViewController.swift */,
 				2F5B1FCF23F877D300736827 /* Main.storyboard */,
+				2F5B1FF9240AEC1C00736827 /* CreationViewController.swift */,
 				2F5B1FD223F877DE00736827 /* Assets.xcassets */,
 				2F5B1FD423F877DE00736827 /* LaunchScreen.storyboard */,
 				2F5B1FD723F877DE00736827 /* Info.plist */,
@@ -262,6 +265,7 @@
 				2F5B1FCE23F877D300736827 /* ViewController.swift in Sources */,
 				2F5B1FCA23F877D300736827 /* AppDelegate.swift in Sources */,
 				2F5B1FCC23F877D300736827 /* SceneDelegate.swift in Sources */,
+				2F5B1FFA240AEC1C00736827 /* CreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Flashcards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Flashcards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

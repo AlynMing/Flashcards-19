@@ -43,18 +43,39 @@ class ViewController: UIViewController {
         btnOptionThree.layer.borderWidth = 3.0
         btnOptionThree.layer.borderColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let navigationController = segue.destination as! UINavigationController
+        let creationController = navigationController.topViewController as! CreationViewController
+        creationController.flashcardsController = self
+    
+        if (segue.identifier == "EditSegue") {
+        creationController.initalQuestion = frontLabel.text
+        creationController.intialAnswer = backLabel.text
+        }
+    }
+   
 
     @IBAction func didTapOnFlashcard(_ sender: Any) {
 
-               if backLabel.isHidden {
+               if (backLabel.isHidden) {
                    frontLabel.isHidden = true
                    backLabel.isHidden = false
                   }
-               else if frontLabel.isHidden {
+               else if (frontLabel.isHidden) {
                    backLabel.isHidden = true
                    frontLabel.isHidden = false
                }
            
+    }
+    func updateFlashcard (question: String, answer: String, extraAnswer1: String?, extraAnswer2: String?){
+        frontLabel.text = question
+        backLabel.text = answer
+        
+        btnOptionOne.setTitle(extraAnswer1, for: .normal)
+        btnOptionTwo.setTitle(answer, for: .normal)
+        btnOptionThree.setTitle(extraAnswer2, for: .normal)
     }
     
     @IBAction func didTapOptionOne(_ sender: Any) {

@@ -65,6 +65,24 @@
                                     <action selector="didTapOptionThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L9B-gx-0bf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoQ-lB-8Ol">
+                                <rect key="frame" x="157" y="788" width="88" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <segue destination="qiQ-f3-c26" kind="presentation" id="PGB-RH-AxG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvb-Xp-Br5">
+                                <rect key="frame" x="323" y="496" width="76" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Button" image="pencil" catalog="system"/>
+                                <connections>
+                                    <segue destination="qiQ-f3-c26" kind="show" identifier="EditSegue" id="ujz-zb-6VX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -87,5 +105,99 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
         </scene>
+        <!--Creation View Controller-->
+        <scene sceneID="TrK-20-SBu">
+            <objects>
+                <viewController id="loz-Kc-Pdm" customClass="CreationViewController" customModule="Flashcards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P3N-OS-lfq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Question" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wVX-JQ-TpR">
+                                <rect key="frame" x="66" y="127" width="291" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DP5-Yb-bZa">
+                                <rect key="frame" x="66" y="231" width="291" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Extra answer #1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fx1-TD-uLy">
+                                <rect key="frame" x="66" y="333" width="291" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Extra Answer #2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="88C-pP-Ugv">
+                                <rect key="frame" x="66" y="436" width="291" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Lr8-SX-6Vg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9cF-6b-LwS">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="Ays-2S-RDH">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2bM-ga-86f">
+                                <rect key="frame" x="20" y="13" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="CANCEL"/>
+                                <connections>
+                                    <action selector="didTapOnCancel:" destination="loz-Kc-Pdm" eventType="touchUpInside" id="Pmp-T4-K2T"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="3PJ-F4-WTT">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MDg-MY-ulJ">
+                                <rect key="frame" x="302" y="13" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="DONE"/>
+                                <connections>
+                                    <action selector="didTapOnDone:" destination="loz-Kc-Pdm" eventType="touchUpInside" id="3xE-dK-g6Q"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="answerTextField" destination="DP5-Yb-bZa" id="Cte-Eg-1LI"/>
+                        <outlet property="extraAnswer_1" destination="fx1-TD-uLy" id="VPZ-Tf-utt"/>
+                        <outlet property="extraAnswer_2" destination="88C-pP-Ugv" id="smC-PJ-b3v"/>
+                        <outlet property="questionTextField" destination="wVX-JQ-TpR" id="BhT-Fx-7WK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vub-MT-IlW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1824.6376811594205" y="115.84821428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Udu-i3-Abi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qiQ-f3-c26" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="qJU-Sh-NYR"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BYL-aZ-hCx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="loz-Kc-Pdm" kind="relationship" relationship="rootViewController" id="l2z-he-1gl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dmx-LO-6i3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914.49275362318849" y="115.84821428571428"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="pencil" catalog="system" width="64" height="56"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ujz-zb-6VX"/>
+    </inferredMetricsTieBreakers>
 </document>
