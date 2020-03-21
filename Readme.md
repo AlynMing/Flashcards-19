@@ -3,7 +3,7 @@
 ## Lab 3
 
 ### App Description
-Part 3 of the Flashcard app buit in Xcode on iPhone 11
+Part 3 of the Flashcard app buit in Xcode on iPhone 11.
 User can now browse through different flashcards, save, edit and delete them.
 
 ### App Walk-through
@@ -22,7 +22,7 @@ User can now browse through different flashcards, save, edit and delete them.
 ## Lab 2
 
 ### App Description
-Continuation of the flashcard app, built in Xcode on iPhone 11
+Continuation of the flashcard app, built in Xcode on iPhone 11.
 Addition of a new screen where the displayed flashcard text can be modified. If the question and/or the right answer is missing, an error message will prompt the user to fill the necessary fields.
 
 ### App Walk-through
