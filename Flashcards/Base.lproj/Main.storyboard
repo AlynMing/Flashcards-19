@@ -15,17 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V3Y-Is-20a">
-                                <rect key="frame" x="106" y="405" width="203" height="86"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V3Y-Is-20a">
+                                <rect key="frame" x="106" y="405" width="202" height="86"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Korali" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJZ-mC-fEB">
-                                        <rect key="frame" x="-8" y="10" width="203" height="68"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Korali" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJZ-mC-fEB">
+                                        <rect key="frame" x="-8" y="10" width="202" height="68"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What's my name?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rg2-uJ-ciX">
-                                        <rect key="frame" x="0.0" y="0.0" width="203" height="86"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's my name?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rg2-uJ-ciX">
+                                        <rect key="frame" x="0.0" y="0.0" width="202" height="86"/>
                                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -74,23 +74,12 @@
                                     <action selector="didTapOptionTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IAp-0w-BQ0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPd-1m-AVd">
-                                <rect key="frame" x="142" y="678" width="117" height="47"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoQ-lB-8Ol">
+                                <rect key="frame" x="175" y="811" width="64" height="64"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="47" id="2vd-fL-IW8"/>
+                                    <constraint firstAttribute="height" constant="64" id="ubr-I0-9Qr"/>
                                 </constraints>
-                                <state key="normal" title="Koraly"/>
-                                <connections>
-                                    <action selector="didTapOptionThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L9B-gx-0bf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoQ-lB-8Ol">
-                                <rect key="frame" x="157" y="788" width="88" height="46"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="ubr-I0-9Qr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="+"/>
+                                <state key="normal" image="addButton"/>
                                 <connections>
                                     <segue destination="qiQ-f3-c26" kind="presentation" id="PGB-RH-AxG"/>
                                 </connections>
@@ -103,47 +92,60 @@
                                     <segue destination="qiQ-f3-c26" kind="show" identifier="EditSegue" id="ujz-zb-6VX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7g-HE-dLL">
-                                <rect key="frame" x="25" y="832" width="38" height="22"/>
-                                <state key="normal" title="PREV"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7g-HE-dLL">
+                                <rect key="frame" x="20" y="811" width="64" height="64"/>
+                                <state key="normal" image="arrowLeft"/>
+                                <state key="disabled" image="arrowLeftDisabled"/>
                                 <connections>
                                     <action selector="didTapOnPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tfc-MN-PzT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPg-Sg-zxQ">
-                                <rect key="frame" x="352" y="832" width="39" height="30"/>
-                                <state key="normal" title="NEXT"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPg-Sg-zxQ">
+                                <rect key="frame" x="329" y="811" width="64" height="64"/>
+                                <state key="normal" image="arrowRight"/>
+                                <state key="disabled" image="arrowRightDisabled"/>
                                 <connections>
                                     <action selector="didTapOnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mhe-DM-5rU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPd-1m-AVd">
+                                <rect key="frame" x="142" y="662" width="117" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="2vd-fL-IW8"/>
+                                </constraints>
+                                <state key="normal" title="Koraly"/>
+                                <connections>
+                                    <action selector="didTapOptionThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L9B-gx-0bf"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="f7g-HE-dLL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="788" id="592-2N-j8h"/>
-                            <constraint firstItem="dPd-1m-AVd" firstAttribute="centerX" secondItem="PoQ-lB-8Ol" secondAttribute="centerX" id="7wk-mE-sqz"/>
+                            <constraint firstItem="f7g-HE-dLL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="767" id="592-2N-j8h"/>
+                            <constraint firstItem="dPd-1m-AVd" firstAttribute="centerX" secondItem="PoQ-lB-8Ol" secondAttribute="centerX" constant="-6.5" id="7wk-mE-sqz"/>
                             <constraint firstItem="V3Y-Is-20a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="361" id="Aex-6V-jhJ"/>
                             <constraint firstItem="V3Y-Is-20a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BJJ-Bm-qWe"/>
                             <constraint firstItem="f7g-HE-dLL" firstAttribute="top" secondItem="UPg-Sg-zxQ" secondAttribute="top" id="BXn-0i-lHK"/>
                             <constraint firstItem="s3B-PA-ONE" firstAttribute="trailing" secondItem="CNp-Zc-ov7" secondAttribute="trailing" id="GFh-5D-C4R"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PoQ-lB-8Ol" secondAttribute="bottom" constant="28" id="ImM-0C-S96"/>
-                            <constraint firstItem="hvb-Xp-Br5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="323" id="Jzy-Gl-geZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PoQ-lB-8Ol" secondAttribute="bottom" constant="-13" id="ImM-0C-S96"/>
+                            <constraint firstItem="hvb-Xp-Br5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jzy-Gl-geZ"/>
                             <constraint firstItem="V3Y-Is-20a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="Ke2-MU-aCR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hvb-Xp-Br5" secondAttribute="trailing" constant="15" id="Los-s1-ypE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s3B-PA-ONE" secondAttribute="trailing" constant="155" id="MI6-ga-l4I"/>
-                            <constraint firstItem="dPd-1m-AVd" firstAttribute="top" secondItem="CNp-Zc-ov7" secondAttribute="bottom" constant="24" id="MT3-eX-let"/>
+                            <constraint firstItem="dPd-1m-AVd" firstAttribute="top" secondItem="CNp-Zc-ov7" secondAttribute="bottom" constant="8" id="MT3-eX-let"/>
                             <constraint firstItem="hvb-Xp-Br5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="452" id="NLl-dQ-TXo"/>
-                            <constraint firstItem="f7g-HE-dLL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Oa0-pR-4AK"/>
-                            <constraint firstItem="PoQ-lB-8Ol" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="Qr1-S7-yNO"/>
+                            <constraint firstItem="f7g-HE-dLL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Oa0-pR-4AK"/>
+                            <constraint firstItem="PoQ-lB-8Ol" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="175" id="Qr1-S7-yNO"/>
                             <constraint firstItem="s3B-PA-ONE" firstAttribute="leading" secondItem="CNp-Zc-ov7" secondAttribute="leading" id="Ru9-dB-U3h"/>
                             <constraint firstItem="V3Y-Is-20a" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="S5h-5v-jJK"/>
                             <constraint firstItem="CNp-Zc-ov7" firstAttribute="top" secondItem="s3B-PA-ONE" secondAttribute="bottom" constant="17" id="TS8-0V-Hfy"/>
                             <constraint firstItem="s3B-PA-ONE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="V0J-vt-dCh"/>
-                            <constraint firstItem="PoQ-lB-8Ol" firstAttribute="top" secondItem="dPd-1m-AVd" secondAttribute="bottom" constant="63" id="bjk-Ig-xY4"/>
-                            <constraint firstItem="CNp-Zc-ov7" firstAttribute="leading" secondItem="dPd-1m-AVd" secondAttribute="leading" id="erz-WE-v0q"/>
+                            <constraint firstItem="PoQ-lB-8Ol" firstAttribute="top" secondItem="dPd-1m-AVd" secondAttribute="bottom" constant="102" id="bjk-Ig-xY4"/>
+                            <constraint firstItem="CNp-Zc-ov7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dPd-1m-AVd" secondAttribute="leading" id="erz-WE-v0q"/>
                             <constraint firstItem="s3B-PA-ONE" firstAttribute="top" secondItem="V3Y-Is-20a" secondAttribute="bottom" constant="51" id="fqE-95-Ikf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f7g-HE-dLL" secondAttribute="bottom" constant="8" id="mIN-xx-ha2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UPg-Sg-zxQ" secondAttribute="trailing" constant="23" id="sfd-VF-AAY"/>
-                            <constraint firstItem="CNp-Zc-ov7" firstAttribute="trailing" secondItem="dPd-1m-AVd" secondAttribute="trailing" id="vDT-Hf-crr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f7g-HE-dLL" secondAttribute="bottom" constant="-13" id="mIN-xx-ha2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UPg-Sg-zxQ" secondAttribute="trailing" constant="21" id="sfd-VF-AAY"/>
+                            <constraint firstItem="CNp-Zc-ov7" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dPd-1m-AVd" secondAttribute="trailing" id="vDT-Hf-crr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -257,6 +259,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addButton" width="64" height="64"/>
+        <image name="arrowLeft" width="64" height="64"/>
+        <image name="arrowLeftDisabled" width="64" height="64"/>
+        <image name="arrowRight" width="64" height="64"/>
+        <image name="arrowRightDisabled" width="64" height="64"/>
         <image name="pencil" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
