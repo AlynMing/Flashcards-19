@@ -3,7 +3,7 @@
 ## Lab 4
 
 ### App Description
-Part 4 of Flashcard app. App icon, splash screen and animations added 
+Part 4 of Flashcard app. App icon, splash screen and animations added (optional steps to be added at a later date)
 
 ### App Walk-though
 <img src="http://g.recordit.co/xROQkgaMq1.gif" width=200><br>
