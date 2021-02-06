@@ -10,11 +10,11 @@ User can now browse through different flashcards, save, edit and delete them.
 <img src="http://g.recordit.co/SHPi6pg0kF.gif" width=200><br>
 
 ## Required
-- [x] User can browse through multiple flashcards
-- [x] User can re-open the app and see previously created flashcards
-- [x] Push code to GitHub
+- [ ] User can browse through multiple flashcards
+- [ ] User can re-open the app and see previously created flashcards
+- [ ] Push code to GitHub
 ## Optional
-- [x] User can delete a flashcard
-- [x] User can edit existing flashcard
-- [-] User can store multiple choice questions
+- [ ] User can delete a flashcard
+- [ ] User can edit existing flashcard
+- [ ] User can store multiple choice questions
 
